@@ -41,7 +41,7 @@ let game = {
         if (!this.firstCard || !this.secondCard) {
             return false;
         }
-        return his.firstCard.icon === this.secondCard.icon;
+        return his.firstCard.icon == this.secondCard.icon;
     },
 
     clearCards: function () {

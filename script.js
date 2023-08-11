@@ -44,7 +44,7 @@ function createCardFace(face, card, element) {
 
         let iconElement = document.createElement('img');
         iconElement.classList.add(ICON);
-        iconElement.src = "./assets/images/" + card.icon + ".png";
+        iconElement.src = "/assets/images/" + card.icon + ".png";
         cardElementFace.appendChild(iconElement);
 
     } else {
@@ -56,7 +56,7 @@ function createCardFace(face, card, element) {
 
 function flipCard() {
 
-    if (game.setCard(this.id)); {
+    if (game.setCard(this.id)) {
 
         this.classList.add("flipp");
         if (game.secondCard) {
